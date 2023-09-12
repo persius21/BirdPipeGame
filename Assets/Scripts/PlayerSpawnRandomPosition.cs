@@ -9,4 +9,5 @@ public class PlayerSpawnRandom : NetworkBehaviour
     public override void OnNetworkSpawn(){
         transform.position = new Vector3(Random.Range(-2,0),2,0);
     }
+
 }
