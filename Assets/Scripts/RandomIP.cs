@@ -20,7 +20,6 @@ public class RandomIP : MonoBehaviour
 		ipAddress = "0.0.0.0";
 		SetIpAddress(); // Set the Ip to the above address
 		pcAssigned = false;
-		InvokeRepeating("assignPlayerController", 0.1f, 0.1f);
 	}
 
 	// To Host a game
