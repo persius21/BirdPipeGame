@@ -32,6 +32,12 @@ public class NetcodeRPCforVS : NetworkBehaviour
 
     }
 
+    [ServerRpc(RequireOwnership = false)]
+    public void NOOWNERServerRpc(string value, Vector3 vector){
+        CustomEvent.Trigger(gameObject, value, vector);
+    }
+
+    
     [ClientRpc]
     public void VSClientRPC(string value){
          CustomEvent.Trigger(gameObject, value);
