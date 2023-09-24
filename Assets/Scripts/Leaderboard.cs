@@ -21,7 +21,6 @@ public class Leaderboard : MonoBehaviour
     {
         bool done = false;
         string playerID = PlayerPrefs.GetString("PlayerID");
-        LootLockerSDKManager.ResetScoreCalls();
         
         LootLockerSDKManager.SubmitScore(playerID,scoreToUpload, leaderboardID,(response) =>
         {
