@@ -1,7 +1,8 @@
 using System.Collections;
+using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerManagerScore : MonoBehaviour
+public class PlayerManagerScore : NetworkBehaviour
 {
     public Leaderboard leaderboard;
     public GameObject PlayerReference;
