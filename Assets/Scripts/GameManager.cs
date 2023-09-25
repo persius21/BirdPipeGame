@@ -60,7 +60,7 @@ public class GameManager : NetworkBehaviour
             }
 
             // Wait for a moment before checking again (adjust the delay as needed)
-            yield return new WaitForSeconds(4f); // Change 2f to the desired delay in seconds
+            yield return new WaitForSeconds(5f); // Change 2f to the desired delay in seconds
         }
     }
 

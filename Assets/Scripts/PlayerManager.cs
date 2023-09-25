@@ -33,6 +33,8 @@ public class PlayerManager : MonoBehaviour
                 }
                 });
         yield return new WaitWhile(()=>done == false);
+
+        
     }
 
 
