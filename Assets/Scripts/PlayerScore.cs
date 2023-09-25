@@ -24,7 +24,7 @@ public class PlayerScore : NetworkBehaviour
 
  private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Pipe"))
+        if (collision.gameObject.CompareTag("Pipe")&& IsOwner)
         {
             // When a player collides with a pipe, change the isAlive boolean to false.
             isAlive = false;
