@@ -39,9 +39,12 @@ public class PlayerManagerScore : NetworkBehaviour
 
                 score = playerScoreValue;
 
-                if (isColliding)
+                if (isColliding == true)
                 {
                     yield return leaderboard.SubmitScoreRoutine(score);
+                    yield return leaderboard.FetchTopHighscoresRoutine();
+                }
+                else{
                     yield return leaderboard.FetchTopHighscoresRoutine();
                 }
             }
