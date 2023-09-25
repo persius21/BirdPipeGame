@@ -28,6 +28,7 @@ public class PlayerScore : NetworkBehaviour
         {
             // When a player collides with a pipe, change the isAlive boolean to false.
             isAlive = false;
+
             
             // You can add any additional logic here, such as playing a death animation or sound.
         }
