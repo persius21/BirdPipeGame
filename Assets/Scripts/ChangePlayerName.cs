@@ -35,7 +35,8 @@ public class ChangePlayerName : NetworkBehaviour
         StartCoroutine(leaderboard.FetchTopHighscoresRoutine());
         
         NetworkManager.StartClient();
-        ClientBTN.onClick.AddListener(OnClientBtnClick); // Hide the parent GameObject
+
+        HostBTN.transform.parent.gameObject.SetActive(false); // Hide the Client GameObject
     }
 
     
