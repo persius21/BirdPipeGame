@@ -7,6 +7,8 @@ using UnityEngine.VFX;
 
 public class HideText : MonoBehaviour
 {
+    public TextMeshProUGUI JoinCode;
+    public TextMeshProUGUI ScoreText; 
     
     public Button button1;
 
@@ -14,15 +16,20 @@ public class HideText : MonoBehaviour
     public Button button2;
 
     
-    public TextMeshProUGUI Text;
 
     void Update(){
-        button1.onClick.AddListener(setPlayerScoreText);
-        button2.onClick.AddListener(setPlayerScoreText);
+        button1.onClick.AddListener(setTextActive);
+        button2.onClick.AddListener(setTextActive);
     }
 
-    void setPlayerScoreText(){
-         Text.gameObject.SetActive(true);
+    void setTextActive(){
+
+         ScoreText.gameObject.SetActive(true);
+         JoinCode.gameObject.SetActive(true);
+
+
+         
+
     }
 }
 

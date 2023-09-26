@@ -8,7 +8,10 @@ using UnityEngine.UI;
 
 public class ChangePlayerName : NetworkBehaviour
 {
+    public TestRelay testRelay;
     public TMP_InputField PlayerNameInput;
+    public TMP_InputField InputJoinCodeField;
+
     public Button HostBTN;
     public Button ClientBTN;
     public Leaderboard leaderboard;
@@ -23,8 +26,10 @@ public class ChangePlayerName : NetworkBehaviour
         StartCoroutine(ChangePlayerNameRoutine());
         StartCoroutine(leaderboard.SubmitScoreRoutine(0));
         StartCoroutine(leaderboard.FetchTopHighscoresRoutine());
+
+
+        testRelay.CreateRelay();
         
-        NetworkManager.StartHost();
         
         HostBTN.transform.parent.gameObject.SetActive(false); // Hide the parent GameObject
     }
@@ -33,9 +38,10 @@ public class ChangePlayerName : NetworkBehaviour
         StartCoroutine(ChangePlayerNameRoutine());
         StartCoroutine(leaderboard.SubmitScoreRoutine(0));
         StartCoroutine(leaderboard.FetchTopHighscoresRoutine());
-        
-        NetworkManager.StartClient();
 
+        string code = InputJoinCodeField.text;
+        
+        testRelay.JoinRelay(code);
         HostBTN.transform.parent.gameObject.SetActive(false); // Hide the Client GameObject
     }
 
