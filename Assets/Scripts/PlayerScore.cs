@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerScore : NetworkBehaviour
 {
+    [SerializeField]
+    private AudioSource scoreSoundEffect;
     private int score = 0; // Store the player's score.
     private bool isColliding = false;
     private bool isAlive = true;
@@ -14,6 +16,7 @@ public class PlayerScore : NetworkBehaviour
             // When a player enters a point collider, increase the player's score.
             score++;
             isColliding = true;
+            scoreSoundEffect.Play();
             }    
             
         }

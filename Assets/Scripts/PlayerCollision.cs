@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerCollision : NetworkBehaviour
 {
+    [SerializeField]
+    private AudioSource eDamageSoundEffect;
     private bool isAlive = true;
 
     // This method is called when a collision occurs with another GameObject's collider.
@@ -12,6 +14,7 @@ public class PlayerCollision : NetworkBehaviour
         {
             // When a player collides with a pipe, change the isAlive boolean to false.
             isAlive = false;
+            eDamageSoundEffect.Play();
             
             // You can add any additional logic here, such as playing a death animation or sound.
         }
