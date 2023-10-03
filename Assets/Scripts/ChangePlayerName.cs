@@ -30,7 +30,6 @@ public class ChangePlayerName : NetworkBehaviour
 
         testRelay.CreateRelay();
         
-        
         HostBTN.transform.parent.gameObject.SetActive(false); // Hide the parent GameObject
     }
     void OnClientBtnClick()
