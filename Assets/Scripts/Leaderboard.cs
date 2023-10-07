@@ -16,7 +16,7 @@ public class Leaderboard : MonoBehaviour
         
     }
 
-    [System.Obsolete]
+    
     public IEnumerator SubmitScoreRoutine(int scoreToUpload)
     {
         bool done = false;

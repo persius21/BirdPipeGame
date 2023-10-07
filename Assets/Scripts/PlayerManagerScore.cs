@@ -51,7 +51,7 @@ public class PlayerManagerScore : NetworkBehaviour
         }
 
         // Wait for a couple of seconds before checking the scores again.
-        yield return new WaitForSeconds(1f); // Change 2f to the desired delay in seconds.
+        yield return new WaitForSeconds(2f); // Change 2f to the desired delay in seconds.
 
         // Set the flag to indicate that the coroutine is no longer running.
         isCoroutineRunning = false;
