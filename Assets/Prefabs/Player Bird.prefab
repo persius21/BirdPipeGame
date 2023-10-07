@@ -48,14 +48,82 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7442827774357985791, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5992869834641067043, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5379017298126786793, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5341511922205519485, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4839135844121075814, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2085410024751851997, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1690489543610797988, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1489890264920006832, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 635547659545568360, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
       propertyPath: m_Name
       value: Player Bird
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121007488348928363, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300321566208325233, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468551188479771725, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418654631090444452, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: c21ce71ce4122b24981ed502dfe230de, type: 2}
+    - target: {fileID: 7036213049465896255, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8246602120277497419, guid: 5b40a91642043a649ac53a99ebb79270, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -643,12 +711,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TransitionStateInfoList:
-  - IsCrossFadeExit: 0
-    Layer: 0
-    OriginatingState: 2081823275
-    DestinationState: 1343785095
-    TransitionDuration: 0.25
-    TriggerNameHash: 113680519
-    TransitionIndex: 0
+  TransitionStateInfoList: []
   m_Animator: {fileID: 2077878893939113783}

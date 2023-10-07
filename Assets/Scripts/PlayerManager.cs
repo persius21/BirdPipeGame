@@ -5,7 +5,7 @@ using LootLocker.Requests;
 
 public class PlayerManager : MonoBehaviour
 {
-    public Leaderboard leaderboard;
+    public LootLockerLeaderboard leaderboard;
     // Start is called before the first frame update
     void Start()
     {
