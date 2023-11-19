@@ -22,6 +22,7 @@ public class ChangePlayerName : NetworkBehaviour
         ClientBTN.onClick.AddListener(OnClientBtnClick);
     }
 
+    [System.Obsolete]
     void OnHostBtnClick()
     {
         StartCoroutine(ChangePlayerNameRoutine());
@@ -33,6 +34,8 @@ public class ChangePlayerName : NetworkBehaviour
         
         HostBTN.transform.parent.gameObject.SetActive(false); // Hide the parent GameObject
     }
+
+    [System.Obsolete]
     void OnClientBtnClick()
     {
         StartCoroutine(ChangePlayerNameRoutine());

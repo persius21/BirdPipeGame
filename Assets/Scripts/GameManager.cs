@@ -9,7 +9,6 @@ using Unity.Networking.Transport;
 public class GameManager : NetworkBehaviour
 {
     private List<PlayerCollision> players = new List<PlayerCollision>();
-    private bool isCoroutineRunning = false;
     private bool allPlayersDead = false; // Track if all players are dead
 
     // Start is called before the first frame update
