@@ -17,6 +17,7 @@ public class ChangePlayerName : NetworkBehaviour
     public Leaderboard leaderboard;
 
     void Start(){
+        PlayerNameInput.characterLimit = 8;
         HostBTN.onClick.AddListener(OnHostBtnClick);
         ClientBTN.onClick.AddListener(OnClientBtnClick);
     }
