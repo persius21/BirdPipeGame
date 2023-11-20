@@ -18,6 +18,7 @@ public class PlayerManagerScore : NetworkBehaviour
         }
     }
 
+    [System.Obsolete]
     private IEnumerator SendScoreUpdates()
     {
         // Set the flag to indicate that the coroutine is running.
